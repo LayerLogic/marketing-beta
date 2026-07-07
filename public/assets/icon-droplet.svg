@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <!-- droplet glyph -->
+  <path d="M40 10 C 40 10, 22 32, 22 48 A 18 18 0 0 0 58 48 C 58 32, 40 10, 40 10 Z"
+    fill="none" stroke="#7c19f6" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="35" cy="45" r="3" fill="#7c19f6" opacity="0.7"/>
+</svg>

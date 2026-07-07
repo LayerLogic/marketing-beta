@@ -38,7 +38,7 @@ Use the `.png` — same drag-and-drop flow.
 ### Recolor / brand fit
 If you need a different palette than the dark/light pairs:
 1. Open the `.svg` in Figma or Illustrator
-2. Bulk-select strokes and fills (the teal accent is `#06B6A7` dark / `#047A70` light)
+2. Bulk-select strokes and fills (the purple accent is `#c497fb` dark / `#7c19f6` light)
 3. Replace with your slide's accent color
 
 ## Animated GIFs
