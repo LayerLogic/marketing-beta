@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="519" viewBox="0 0 640 519" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <filter id="cardShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#230059" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <!-- secondary "ghost" card, peeking behind, rotated -->
+  <g transform="translate(322 74) rotate(4)" filter="url(#cardShadow)" opacity="0.92">
+    <rect width="278" height="150" rx="14" fill="#ffffff" stroke="#230059" stroke-opacity="0.12"/>
+    <circle cx="26" cy="30" r="4" fill="#230059" fill-opacity="0.30"/>
+    <text x="40" y="34" font-size="13" fill="#230059" fill-opacity="0.70">Line B · Standby</text>
+    <text x="258" y="34" font-size="13" text-anchor="end" fill="#230059" fill-opacity="0.45">14:02</text>
+    <text x="22" y="84" font-size="10" letter-spacing="1.2" fill="#230059" fill-opacity="0.50">LAST READING</text>
+    <text x="22" y="106" font-size="14" font-weight="500" fill="#230059">NEGATIVE</text>
+    <text x="150" y="84" font-size="10" letter-spacing="1.2" fill="#230059" fill-opacity="0.50">SENSOR</text>
+    <text x="150" y="106" font-size="14" font-weight="500" fill="#230059">02 · idle</text>
+  </g>
+
+  <!-- main card, rotated -1.5deg -->
+  <g transform="translate(72 128) rotate(-1.5)" filter="url(#cardShadow)">
+    <rect width="492" height="322" rx="14" fill="#ffffff" stroke="#230059" stroke-opacity="0.12"/>
+
+    <!-- toolbar -->
+    <g>
+      <circle cx="22" cy="28" r="4" fill="#230059" fill-opacity="0.18"/>
+      <circle cx="34" cy="28" r="4" fill="#230059" fill-opacity="0.18"/>
+      <circle cx="46" cy="28" r="4" fill="#230059" fill-opacity="0.18"/>
+      <text x="64" y="32" font-size="12" fill="#230059" fill-opacity="0.70">LayerLogic Control · Line A</text>
+      <text x="474" y="32" font-size="12" text-anchor="end" fill="#230059" fill-opacity="0.45">v1.0</text>
+      <line x1="18" y1="48" x2="474" y2="48" stroke="#230059" stroke-opacity="0.12"/>
+    </g>
+
+    <!-- side column -->
+    <g>
+      <circle cx="22" cy="70" r="7" fill="#7c19f6" fill-opacity="0.22"/>
+      <circle cx="22" cy="70" r="4" fill="#7c19f6"/>
+      <text x="34" y="74" font-size="11.5" fill="#230059" fill-opacity="0.80">SENSOR_01 · live</text>
+
+      <text x="18" y="112" font-size="10" letter-spacing="1.2" fill="#230059" fill-opacity="0.50">RUNTIME</text>
+      <text x="18" y="138" font-size="26" font-weight="500" letter-spacing="-0.5" fill="#230059">06:42</text>
+
+      <text x="18" y="180" font-size="10" letter-spacing="1.2" fill="#230059" fill-opacity="0.50">TARGET</text>
+      <text x="18" y="200" font-size="14" font-weight="500" font-style="italic" fill="#230059">L.</text>
+      <text x="18" y="218" font-size="14" font-weight="500" font-style="italic" fill="#230059">monocytogenes</text>
+    </g>
+
+    <!-- chart -->
+    <g>
+      <text x="144" y="74" font-size="10" letter-spacing="1.2" fill="#230059" fill-opacity="0.50">DETECTION FEED</text>
+      <text x="474" y="74" font-size="12" text-anchor="end" fill="#230059" fill-opacity="0.45">ΔI<tspan font-size="8" dy="2">ds</tspan></text>
+
+      <g transform="translate(144 88) scale(1.65)">
+        <!-- grid -->
+        <g stroke="#230059" stroke-width="0.4" stroke-opacity="0.18">
+          <line x1="0" y1="25" x2="200" y2="25"/>
+          <line x1="0" y1="50" x2="200" y2="50"/>
+          <line x1="0" y1="75" x2="200" y2="75"/>
+        </g>
+        <!-- baseline guide -->
+        <line x1="0" y1="78" x2="200" y2="78" stroke="#230059" stroke-opacity="0.30" stroke-dasharray="3 4" stroke-width="0.7"/>
+        <!-- detection trace -->
+        <polyline points="0,80 24,78 40,74 56,72 76,62 92,58 112,46 132,40 152,28 172,22 200,18"
+          fill="none" stroke="#7c19f6" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+        <!-- leading tip -->
+        <circle cx="200" cy="18" r="2.6" fill="#7c19f6"/>
+      </g>
+    </g>
+
+    <!-- verdict row -->
+    <line x1="18" y1="286" x2="474" y2="286" stroke="#230059" stroke-opacity="0.12"/>
+    <text x="18" y="306" font-size="11" fill="#230059" fill-opacity="0.50">RESULT_01 · 14:08</text>
+  </g>
+</svg>
